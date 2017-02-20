@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>BookStore</title>
+  <!-- webapp keywords for search engine -->
+  <meta name="keywords" content="bookstore, SPA, SEO">
+  <!-- webapp description -->
+  <meta name="description" content="bookstore app homepage">
+  <!-- always allow send HTTP refer header to other HTTP or HTTPS site -->
+  <meta name="referrer" content="always">
+  <!-- webapp author -->
+  <meta name="author" content="songbintaochina@gmail.com">
+  <!-- disable browser load page from local cache -->
+  <meta http-equiv="Pragma" content="no-cache">
+  <!-- Google Ajax crawl specific(HTML5 push state) -->
+  <meta name="fragment" content="!">
+  <!-- responsive webapp(mobile friendly) -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- ie compatible, only for edge -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- define current page language -->
+  <meta http-equiv="Content-Language" content="en">
+  <!-- set current page charset and type -->
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <!-- google verify meta -->
+  <meta name="google-site-verification" content="1POivE0N_TlYpFP0DsBIsCFdgB_bvP9G-2YV12lI7QI" />
+
+  <!-- webapp icon in desktop -->
+  <link rel="shortcut icon" href="../images/favicon-32px.ico">
+  <!-- ios homes creen icon -->
+  <link rel="apple-touch-icon" href="../images/apple-touch-icon.png" />
+  <!-- specify canonical version of current page -->
+  <link rel="canonical" href="{{url}}">
+  <!-- set the default language version of current page -->
+  <link rel="alternate" href="{{url}}" hreflang="x-default">
+
+  <!-- stylesheets -->
+  <link rel='stylesheet' href='/lib/bootstrap.css' />
+  <link rel="stylesheet" href="/lib/device-mockups/device-mockups2.css">
+  <link rel="stylesheet" href="/lib/font-awesome.css">
+  <link rel="stylesheet" href="/lib/simple-line-icons.css">
+  <link rel='stylesheet' href='../stylesheets/style.css' />
+
+  <!-- Custom Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+  <!-- schema.org structure data -->
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "WebSite",
+      "name": "BookStore",
+      "alternateName": "BookStore App",
+      "url": "http://bookstore.bceapp.com"
+    }
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Organization",
+      "url": "http://bookstore.bceapp.com",
+      "logo": "http://bookstore.bceapp.com/images/apple-touch-icon.png",
+      "contactPoint": [{
+        "@type": "ContactPoint",
+        "telephone": "+86-021-1234-4321",
+        "contactType": "customer service"
+      }],
+      "sameAs": [
+        "https://www.facebook.com/4garfield"
+	  ]
+    }
+  </script>
+
+  <!-- google analytics -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-90263726-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+</head>
+
+<body>
+
+<div id="app-navbar"></div>
+<header id="app-header"></header>
+<section id="app-container"></section>
+<footer id="app-footer"></footer>
+
+<script type="text/javascript" data-main="/javascripts/main.js" src="/lib/require.js"></script>
+
+</body>
+
+</html>

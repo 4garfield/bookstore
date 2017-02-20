@@ -1,0 +1,191 @@
+/* navbar style. override navbar.less */
+.navbar-default {
+  background-color: white;
+  border-color: rgba(34,34,34,0.05);
+  transition: all .35s;
+}
+.navbar-default, .navbar-default .navbar-header .navbar-brand, h1, h2, h3, h4, h5, h6 {
+  font-family: Catamaran, Helvetica, Arial, sans-serif;
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+.navbar-default .navbar-brand {
+  color: #fdcc52;
+}
+.navbar-header > .navbar-toggle {
+  color: #222;
+  font-size: 12px;
+  padding: 8px 10px;
+}
+.navbar-default .navbar-nav>li>a {
+  font-family: 'Lato','Helvetica','Arial','sans-serif';
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #222;
+}
+
+/* header style */
+header {
+  background: url("../images/bg-pattern.png"), linear-gradient(to left, #7b4397, #dc2430);
+  color: white;
+  overflow-y: hidden;
+  position: relative;
+  width: 100%;
+}
+header .header-content {
+  padding: 60px 5px 0px;
+  position: relative;
+  text-align: center;
+}
+header .header-content .header-content-inner {
+  margin: 0 auto;
+  max-width: 500px;
+  position: relative;
+}
+header .header-content .header-content-inner h1 {
+  font-size: 30px;
+  margin-bottom: 30px;
+  margin-top: 0;
+}
+
+/* footer style */
+footer {
+  background-color: #222;
+  color: rgba(255,255,255,0.3);
+  padding: 25px 0;
+  text-align: center;
+}
+footer p {
+  font-size: 12px;
+  margin: 0;
+}
+footer ul {
+  margin-bottom: 0;
+}
+footer ul li a {
+  color: rgba(255,255,255,0.3);
+  font-size: 12px;
+}
+footer ul li a:hover {
+  text-decoration: none;
+}
+
+/* container section style */
+section {
+  padding: 100px 0;
+}
+section .section-heading {
+  margin-bottom: 100px;
+}
+section .section-heading h2 {
+  font-size: 50px;
+  margin-top: 0;
+}
+section p {
+  font-family: Muli, Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+hr {
+  max-width: 100px;
+  margin: 25px auto 0;
+  border-width: 1px;
+  border-color: rgba(34,34,34,.1);
+}
+section .device-container, section .feature-item {
+  max-width: 300px;
+  margin: 0 auto;
+}
+section .device-container {
+  margin-bottom: 100px;
+}
+section .feature-item {
+  text-align: center;
+  margin-bottom: 100px;
+}
+section .feature-item h3 {
+  font-size: 30px;
+}
+section .feature-item h3 a {
+  color: inherit;
+  cursor: pointer;
+}
+section .feature-item h3 a:hover, section .feature-item h3 a:focus {
+  text-decoration: none;
+}
+section .feature-item i {
+  font-size: 80px;
+  background: linear-gradient(to left, #7b4397, #dc2430);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+
+/* pad version */
+@media (min-width:768px) {
+  .navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+  }
+  .navbar-default .navbar-header .navbar-brand {
+    color: rgba(255,255,255,0.7);
+  }
+  .navbar-default .navbar-header .navbar-brand:hover,.navbar-default .navbar-header .navbar-brand:focus {
+    color: white;
+  }
+  .navbar-default .nav>li>a {
+    color: rgba(255,255,255,0.7);
+  }
+  .navbar-default .nav>li>a:hover {
+    color: white;
+  }
+  .navbar-default.affix {
+    background-color: white;
+    border-color: rgba(34,34,34,0.1);
+  }
+  .navbar-default.affix .navbar-header .navbar-brand {
+    color: #222;
+  }
+  .navbar-default.affix .navbar-header .navbar-brand:hover {
+    color: #fdcc52;
+  }
+  .navbar-default.affix .nav>li>a {
+    color: #222;
+  }
+  .navbar-default.affix .nav>li>a:hover {
+    color: #fdcc52;
+  }
+  header {
+    min-height: 100%;
+  }
+  header .header-content {
+    height: 60vh;
+    padding: 0;
+    text-align: left;
+  }
+  header .header-content .header-content-inner {
+    margin: 0;
+    max-width: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  header .header-content .header-content-inner h1 {
+    font-size: 35px;
+  }
+}
+/* desktop version */
+@media (min-width:992px) {
+  header .header-content .header-content-inner h1 {
+    font-size: 50px;
+  }
+  section .device-container {
+    margin-bottom: 0;
+  }
+  section .device-container, section .feature-item {
+    max-width: none;
+  }
+}

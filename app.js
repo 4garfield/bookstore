@@ -15,8 +15,8 @@ app.engine('hbs', hbs.express4({}));
 app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, '/views'));
 
-// route to prerender
-//app.use(require('prerender-node').set('prerenderToken', 'KInc1ggARn5fD9rhpzde'));
+// route to prerender.io or self-managed prerender server
+//app.use(require('prerender-node').set('prerenderToken', 'tokenString'));
 
 app.use(favicon(path.join(__dirname, 'public', 'images/favicon-32px.ico')));
 app.use(logger('dev'));
@@ -57,6 +57,7 @@ app.use(function(req, res, next) {
   res.status(404);
   res.sendFile(path.join(__dirname, "./views/404.html"));
 });
+
 // error handler
 app.use(function(err, req, res, next) {
   res.status(500);

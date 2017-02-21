@@ -1,8 +1,9 @@
 {
   "name": "bookstore",
-  "version": "0.2.0",
-  "description": "simple BookStore",
+  "version": "0.2.1",
+  "description": "BookStore SPA app",
   "author": "garfield",
+  "repository": "https://github.com/4garfield/bookstore",
   "license": "MIT",
   "keywords": [
     "SPA",
@@ -23,15 +24,15 @@
     "text": "github:requirejs/text",
 
     "express": "~4.14.0",
-    "body-parser": "~1.15.2",
+    "body-parser": "~1.16.1",
     "cookie-parser": "~1.4.3",
-    "debug": "~2.2.0",
+    "debug": "~2.6.1",
     "less-middleware": "~2.2.0",
     "express-hbs": "~1.0.4",
-    "morgan": "~1.7.0",
-    "serve-favicon": "~2.3.0",
+    "morgan": "~1.8.1",
+    "serve-favicon": "~2.4.0",
 
-    "prerender-node": "~2.6.0"
+    "prerender-node": "~2.7.0"
   },
   "devDependencies": {
     "chai": "~3.5.0",

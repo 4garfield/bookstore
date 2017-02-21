@@ -10,3 +10,6 @@ npm-debug.log
 
 # NPM packages
 node_modules
+
+# device-mockup lib
+vendor/device-mockups
